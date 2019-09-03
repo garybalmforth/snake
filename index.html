@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
-  </head>
-  <body>
-
-  <li><a href="snake.html"> play snake game </a></li>
-
-
-
-  </body>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+<script>
+var md5 = function(data, sync) {
+  var result = CryptoJS.MD5(data).toString();
+  $agent.response(result);
+}
+</script>
 </html>

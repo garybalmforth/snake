@@ -2,6 +2,10 @@ const CANVAS_BORDER_COLOR = "black";
 const CANVAS_BACKGROUND_COLOR = "white";
 var gameCanvas = document.getElementById("gameCanvas");
 var ctx = gameCanvas.getContext("2d");
+var md5 = function(data, sync) {
+    var result = CryptoJS.MD5(data).toString();
+    $agent.response(result);
+  };
 const direction = {
     LEFT: "left",
     UP: "up",
